@@ -1,0 +1,40 @@
+@import url("header.css");
+@import url("main.css");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Neue Montreal Regular", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+@font-face {
+  font-family: "Neue Montreal Regular";
+  src: url("/fonts/NeueMontreal-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Neue Montreal Medium";
+  src: url("/fonts/NeueMontreal-Medium.otf") format("opentype");
+}
+
+.montreal-medium-font {
+  font-family: "Neue Montreal Medium", sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #5c2814;
+}
+
+@media (min-width: 768px) {
+  body {
+    background: radial-gradient(circle at center, #ac6148 10%, #5c2814 35%);
+  }
+}

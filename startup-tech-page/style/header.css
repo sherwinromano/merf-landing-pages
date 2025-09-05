@@ -1,0 +1,104 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+  margin-inline: auto;
+  border-radius: 1.5rem;
+  padding: 4px 5px;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header-wrapper:nth-of-type(1) {
+  gap: 1rem;
+}
+
+.header-wrapper:nth-of-type(2) {
+  display: none;
+  gap: 4px;
+}
+
+.header-wrapper:nth-of-type(1) .page-title {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.header-wrapper:nth-of-type(1) .page-title h1 {
+  font-size: 1rem;
+  color: white;
+}
+
+.header-wrapper:nth-of-type(1) .page-title span {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 50%;
+}
+
+.header-wrapper:nth-of-type(1) nav {
+  display: none;
+}
+
+.header-wrapper:nth-of-type(1) nav a {
+  background-color: white;
+  font-size: 0.875rem;
+  color: black;
+  padding: 8px 14px;
+  border-radius: 1.5rem;
+}
+
+.header-wrapper:nth-of-type(2) button {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 1.5rem;
+  gap: 8px;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.header-wrapper:nth-of-type(2) button:nth-of-type(2) {
+  background-color: #4285f4;
+  color: white;
+}
+
+.header-wrapper:nth-of-type(2) button:nth-of-type(2) span:nth-of-type(2) {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.menu-icon {
+  padding-inline: 8px;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  header {
+    width: 85%;
+  }
+
+  .header-wrapper:nth-of-type(2) {
+    display: flex;
+  }
+
+  .header-wrapper:nth-of-type(1) nav {
+    display: block;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+}

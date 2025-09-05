@@ -1,0 +1,174 @@
+.product-action-wrapper {
+  width: fit-content;
+}
+
+.product-action-wrapper,
+.product-action-wrapper .action-levels {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.product-action-wrapper .action-levels {
+  margin-top: 2rem;
+  gap: 8px;
+}
+
+.product-action-wrapper .action-levels button:nth-of-type(1) {
+  background-color: white;
+  color: black;
+}
+
+.product-action-wrapper .action-levels button {
+  background: #00000040;
+  color: #ffffff50;
+  border: none;
+  padding: 14px;
+  width: 53px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 0.875rem;
+}
+
+.product-action-wrapper .action-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 24px;
+}
+
+.product-action-wrapper .action-buttons .page-to-view button {
+  background: none;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 14px;
+  cursor: pointer;
+}
+
+.product-action-wrapper .action-buttons .image-additions {
+  display: flex;
+  gap: 4px;
+}
+
+.product-action-wrapper .action-buttons .image-additions .image-wrapper {
+  border-radius: 14px;
+  display: flex;
+  overflow: hidden;
+}
+
+.product-action-wrapper .action-buttons .image-additions .image-wrapper img,
+.product-action-wrapper-mobile
+  .action-buttons
+  .image-additions
+  .image-wrapper
+  img {
+  width: 60px;
+  height: 60px;
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: top;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.product-action-wrapper
+  .action-buttons
+  .image-additions
+  .image-wrapper:nth-of-type(2)
+  img,
+.product-action-wrapper-mobile
+  .action-buttons
+  .image-additions
+  .image-wrapper:nth-of-type(2)
+  img {
+  object-position: bottom;
+  transform: scale(1.2);
+}
+
+.product-action-wrapper .action-buttons .quantity-selection,
+.product-action-wrapper-mobile .action-buttons .quantity-selection {
+  display: flex;
+}
+
+.product-action-wrapper .action-buttons .quantity-selection button,
+.product-action-wrapper-mobile .action-buttons .quantity-selection button {
+  background: none;
+  border: 2px solid white;
+  display: grid;
+  place-items: center;
+  border-radius: 7px;
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.product-action-wrapper .action-buttons .quantity-selection span,
+.product-action-wrapper-mobile .action-buttons .quantity-selection span {
+  margin-inline: 14px;
+}
+
+.product-action-wrapper-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.product-action-wrapper-mobile .action-container,
+.product-action-wrapper-mobile .action-buttons,
+.product-action-wrapper-mobile .action-container .action-levels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+}
+
+.product-action-wrapper-mobile .action-container .action-levels button {
+  background: #00000040;
+  color: #ffffff50;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 0.75rem;
+}
+
+.product-action-wrapper-mobile
+  .action-container
+  .action-levels
+  button:nth-of-type(1) {
+  background-color: white;
+  color: black;
+}
+
+.product-action-wrapper-mobile .action-container .page-to-view button {
+  background: none;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.product-action-wrapper-mobile .action-buttons .image-additions {
+  display: flex;
+  gap: 4px;
+}
+
+.product-action-wrapper-mobile .action-buttons .image-additions .image-wrapper {
+  border-radius: 14px;
+  display: flex;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .product-action-wrapper,
+  .product-action-wrapper .action-levels {
+    display: flex;
+  }
+
+  .product-action-wrapper-mobile {
+    display: none;
+  }
+}

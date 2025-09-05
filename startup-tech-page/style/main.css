@@ -1,0 +1,155 @@
+.main-wrapper {
+  padding-block: 1rem;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-wrapper h2 {
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.main-wrapper h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.main-wrapper h1 .text-special {
+  color: #4a65f6;
+}
+
+.main-wrapper p {
+  color: #666;
+  width: 80%;
+  text-align: center;
+}
+
+.main-wrapper .title-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+.main-wrapper .title-actions .cta button,
+.main-wrapper .title-actions .role-filter button {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.main-wrapper .title-actions .cta button:nth-of-type(1) {
+  background-color: white;
+}
+
+.main-wrapper .title-actions .cta button:nth-of-type(2) {
+  background-color: #4a65f6;
+  color: white;
+}
+
+.main-wrapper .title-actions .role-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.main-wrapper .title-actions .role-filter button {
+  border-radius: 18px;
+}
+
+.profiles-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  position: relative;
+}
+
+.profiles-wrapper .profile {
+  display: flex;
+  position: relative;
+  border-radius: 8px;
+}
+
+.profiles-wrapper .profile .status {
+  position: absolute;
+  background-color: white;
+  padding: 4px 8px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  top: 1rem;
+  left: 1rem;
+  gap: 4px;
+}
+
+.profiles-wrapper .profile .status span {
+  background-color: #15e215;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+}
+
+.profiles-wrapper .profile .status p {
+  font-size: 0.875rem;
+}
+
+.profiles-wrapper .profile img {
+  width: 100%;
+  border-radius: inherit;
+}
+
+.profiles-wrapper .profile .profile-description {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.profiles-wrapper .profile .profile-description span {
+  color: #ffffff50;
+}
+
+.profiles-wrapper .profile:nth-of-type(1) .profile-description,
+.profiles-wrapper .profile:nth-of-type(1) span {
+  color: black;
+}
+
+@media (min-width: 360px) {
+  .profiles-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 640px) {
+  .profiles-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main-wrapper h1 {
+    width: 50%;
+  }
+
+  .main-wrapper p {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .profiles-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .main-wrapper {
+    align-self: center;
+  }
+}

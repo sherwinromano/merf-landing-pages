@@ -1,0 +1,81 @@
+main .product-info-wrapper {
+  min-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main .product-info-wrapper a {
+  display: none;
+}
+
+main .product-info-wrapper .product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+main .product-info-wrapper .product-info h1 {
+  font-size: 3rem;
+  width: 100%;
+  line-height: 100%;
+}
+
+main .product-info-wrapper .product-info .product-price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.25rem;
+}
+
+main .product-info-wrapper .product-info .product-price span:nth-of-type(2) {
+  text-decoration: line-through;
+}
+
+main .product-info-wrapper .product-info .product-description {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+main .product-info-wrapper .product-info .product-description p {
+  font-weight: normal;
+  font-size: 1.125rem;
+}
+
+main .product-info-wrapper .product-info .product-description button {
+  color: black;
+  font-size: 1.125rem;
+  border: none;
+  border-radius: 2rem;
+  padding-block: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  main .product-info-wrapper .product-info {
+    width: 80%;
+  }
+  main .product-info-wrapper .product-info .product-description button {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  main .product-info-wrapper a {
+    display: block;
+  }
+  main .product-info-wrapper .product-info h1 {
+    width: 50%;
+  }
+  main .product-info-wrapper .product-info {
+    width: 22rem;
+  }
+  main .product-info-wrapper .product-info .product-description button {
+    width: 75%;
+  }
+}
