@@ -62,13 +62,29 @@
 
 .main-wrapper .title-actions .role-filter button {
   border-radius: 18px;
+  transition: 0.2s;
+}
+
+.main-wrapper .title-actions .role-filter button:hover {
+  background-color: black;
+  color: white;
+}
+
+.profiles-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.profiles-container:hover {
+  overflow: auto;
 }
 
 .profiles-wrapper {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-auto-flow: column;
+  grid-auto-columns: 250px;
+  width: 140rem;
   gap: 1rem;
-  position: relative;
 }
 
 .profiles-wrapper .profile {
@@ -86,7 +102,7 @@
   align-items: center;
   top: 1rem;
   left: 1rem;
-  gap: 4px;
+  gap: 7px;
 }
 
 .profiles-wrapper .profile .status span {
@@ -119,22 +135,16 @@
   color: #ffffff50;
 }
 
-.profiles-wrapper .profile:nth-of-type(1) .profile-description,
-.profiles-wrapper .profile:nth-of-type(1) span {
+/* ?? Color modifier */
+.profiles-wrapper .profile .profile-description .text-black {
   color: black;
 }
 
-@media (min-width: 360px) {
-  .profiles-wrapper {
-    grid-template-columns: repeat(1, 1fr);
-  }
+.profiles-wrapper .profile .profile-description .text-white {
+  color: white;
 }
 
 @media (min-width: 640px) {
-  .profiles-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .main-wrapper h1 {
     width: 50%;
   }
@@ -145,7 +155,12 @@
 }
 
 @media (min-width: 768px) {
+  .profiles-container {
+    overflow: hidden;
+  }
+
   .profiles-wrapper {
+    grid-auto-flow: row;
     grid-template-columns: repeat(4, 1fr);
   }
 
