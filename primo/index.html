@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Primo</title>
     <link rel="stylesheet" href="styles/index.css" />
+    <script src="script.js" defer></script>
   </head>
-  <body>
+  <body class="bg-variant-0">
     <header>
       <a href="#">
         <svg
@@ -102,7 +103,7 @@
       <div class="product-info-wrapper">
         <a href="#">Back</a>
         <div class="product-info">
-          <h1>Creamy Coffee</h1>
+          <h1 class="product-title">Creamy Coffee</h1>
           <div class="product-price">
             <h2>Guava Favour</h2>
             <span>$79.50</span>
@@ -120,16 +121,47 @@
       </div>
       <div class="product-image-wrapper">
         <div class="product-image">
+          <!--?? Product text -->
           <img src="./img/text.png" alt="Primo Text" width="700px" />
-          <div>
-            <img src="./img/coffee-image.png" alt="Coffee image" />
+          <!--?? Product images -->
+          <div class="product-images">
+            <img
+              src="./img/coffee-image[1].png"
+              class="active"
+              alt="Coffee image"
+            />
+            <img
+              src="./img/coffee-image[2].png"
+              class="inactive"
+              alt="Coffee image"
+            />
+            <img
+              src="./img/coffee-image[3].png"
+              class="inactive"
+              alt="Coffee image"
+            />
           </div>
         </div>
         <h2>$79.50</h2>
       </div>
       <div class="product-image-wrapper-mobile">
-        <div class="product-image">
-          <img src="./img/coffee-image.png" alt="Coffee image" />
+        <!--?? Product images -->
+        <div class="product-images">
+          <img
+            src="./img/coffee-image[1].png"
+            class="active"
+            alt="Coffee image"
+          />
+          <img
+            src="./img/coffee-image[2].png"
+            class="inactive"
+            alt="Coffee image"
+          />
+          <img
+            src="./img/coffee-image[3].png"
+            class="inactive"
+            alt="Coffee image"
+          />
         </div>
       </div>
       <div class="product-action-wrapper">
@@ -140,7 +172,7 @@
         </div>
         <div class="action-buttons">
           <div class="page-to-view">
-            <button>
+            <button class="previous_page">
               <svg
                 width="20"
                 height="19"
@@ -158,7 +190,7 @@
                 />
               </svg>
             </button>
-            <button>
+            <button class="next_page">
               <svg
                 width="20"
                 height="19"
@@ -180,6 +212,7 @@
           <div class="image-additions">
             <div class="image-wrapper">
               <img
+                id="image-preview"
                 src="./img/highlight-image[1].jpg"
                 alt="Primo coffee image"
                 width="50px"
@@ -187,6 +220,7 @@
             </div>
             <div class="image-wrapper">
               <img
+                id="image-preview"
                 src="./img/highlight-image[1].jpg"
                 alt="Primo coffee image"
                 width="50px"
@@ -228,7 +262,7 @@
             <button>100</button>
           </div>
           <div class="page-to-view">
-            <button>
+            <button class="previous_page">
               <svg
                 width="20"
                 height="19"
@@ -246,7 +280,7 @@
                 />
               </svg>
             </button>
-            <button>
+            <button class="next_page">
               <svg
                 width="20"
                 height="19"
@@ -271,6 +305,7 @@
           <div class="image-additions">
             <div class="image-wrapper">
               <img
+                id="image-preview"
                 src="./img/highlight-image[1].jpg"
                 alt="Primo coffee image"
                 width="50px"
@@ -278,6 +313,7 @@
             </div>
             <div class="image-wrapper">
               <img
+                id="image-preview"
                 src="./img/highlight-image[1].jpg"
                 alt="Primo coffee image"
                 width="50px"

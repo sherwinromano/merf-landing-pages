@@ -29,12 +29,24 @@
 
 body {
   margin: 0;
-  height: 100vh;
+  height: fit-content;
+  transition: background-color 0.3s ease-in-out;
+}
+
+body.bg-variant-0 {
   background-color: #5c2814;
+}
+
+body.bg-variant-1 {
+  background-color: #a8491e;
+}
+
+body.bg-variant-2 {
+  background-color: #a8c22c;
 }
 
 @media (min-width: 768px) {
   body {
-    background: radial-gradient(circle at center, #ac6148 10%, #5c2814 35%);
+    height: 100vh;
   }
 }
